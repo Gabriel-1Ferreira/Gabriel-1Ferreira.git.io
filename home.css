@@ -1,0 +1,496 @@
+/*Estilos Gerais para todos os dispositivos*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Times;
+    text-align: center;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+
+header {
+    background-color: rgb(48, 209, 238);
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Finalizado*/
+
+/*DISPOSITIVO MOBILE*/
+@media only screen and (min-width: 300px) and (max-width: 425px) {
+    
+   
+   
+    /*TOPO*/ 
+    header {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .logo a img {
+        width: 125px;
+    }
+    .link-topo {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid rgb(29, 29, 29);
+        
+    }
+    .link-topo a {
+        
+        padding: 18px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px  black;
+    }
+    /*FINALIZADO*/
+
+    /*FUNDO*/
+    .container-img-fundo {
+        width: 100%;
+        height: 275px;
+        background-image: url("assets/recepcao.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+
+    }
+    
+    h1 {
+        font-family: Arial;
+        color: #fff;
+        text-align: left;
+        font-size: 20px;
+        line-height: 32px;
+        text-shadow: 3px 9px 7px black;
+        
+    }
+    /*FINALIZADO*/
+
+    /*CONTEUDO PRINCIPAL*/
+    .limita-secao {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .logo-sobre img {
+        display: none;    /*IMAGEM DO MÉDICO*/
+    }
+    .container-sobre {
+        margin-top: 50px;
+    }
+    h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+        color: rgb(85, 85, 85);
+    }
+    p {
+        color: rgb(134, 134, 134);  /* PARA TODOS OS PARAGRAFOS*/
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .container-lista-sobre h3 {
+        margin: 30px 0px 15px 0px;
+        color: rgb(104, 103, 103);
+        font-size: 14px;
+    }
+    .lista {
+        margin: auto;   
+        width: 285px;
+        font-size: 16px;
+        color: rgb(102, 102, 102);
+        
+    }
+    .lista li {
+        text-align: left;
+        line-height: 22px;
+    }
+
+    .container-clinica h3 {
+        margin: 50px 0px 20px 0px;
+        color: rgb(85, 85, 85);
+        font-size: 20px;
+    }
+    .container-cards a img {
+        width: 100%;
+        
+    }
+    
+    .container-cards {
+        padding: 15px;
+    }
+    .card {
+        border: 2px solid rgb(204, 203, 203);
+        box-shadow: 2px 3px 20px 0 grey;
+        margin-top: 28px;
+    }
+    .card-titulo {
+        padding: 18px;
+    }
+    .card-titulo a {
+        text-decoration: none;
+        color: rgb(177, 177, 177);
+    }
+    .ultimo-card {
+        margin-bottom: 40px;
+    } 
+    .botao-ver-horario {
+        text-decoration: none;
+        background-color: rgb(48, 209, 238);
+        padding: 15px 24px;
+        border: 1px solid white;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .botao-ver-horario:hover {
+        font-size: 17px;
+        text-shadow: 1px 1px 3px black;
+    }
+   
+    .container-contato h3 {
+        font-size: 23px;
+        margin: 27px 0 18px 0;
+    }
+    .p1 {
+        margin: 0 0 10px 0;
+    }
+
+    .iframe {
+        margin: 50px 0 45px 0;
+    }
+    /*FINALIZADO*/
+    /* RODAPE */
+    footer {
+        background-color: rgb(103, 199, 223);
+    }
+    .rodape img {
+        width: 125px;
+    }
+    .rodape p {
+        font-size: 15px;
+    }
+    /*FINALIZADO*/
+}
+/*FINALIZADO MOBILE*/
+
+
+/*DISPOSITIVO TABLET*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+   
+   
+    /*TOPO*/ 
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo a img {
+        width: 120px;
+        padding: 0;
+        margin-left: 5px;
+    }
+    
+    .link-topo a {
+        padding: 15px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px  black;
+    }
+    /*FINALIZADO*/
+
+    /*FUNDO*/
+    .container-img-fundo {
+        width: 100%;
+        height: 280px;
+        background-image: url("assets/recepcao.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+     
+    h1 {
+        margin: 20px;
+        font-family: Arial;
+        color: #fff;
+        text-align: left;
+        font-size: 25px;
+        line-height: 32px;
+        text-shadow: 3px 9px 7px black;
+        
+    }
+    /*FINALIZADO*/
+
+    /*CONTEUDO PRINCIPAL*/
+    .limita-secao {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .logo-sobre img {
+        display: none;    /*IMAGEM DO MÉDICO*/
+    }
+    .container-sobre {
+        margin-top: 50px;
+    }
+    h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        color: rgb(85, 85, 85);
+    }
+    p {
+        color: rgb(134, 134, 134);  /* PARA TODOS OS PARAGRAFOS*/
+        line-height: 25px;
+        font-size: 20px;
+    }
+    .container-lista-sobre h3 {
+        margin: 30px 0px 15px 0px;
+        color: rgb(104, 103, 103);
+        font-size: 18px;
+    }
+    .lista {
+        margin: auto;   
+        width: 285px;
+        font-size: 18px;
+        color: rgb(102, 102, 102);
+        
+    }
+    .lista li {
+        text-align: left;
+        line-height: 22px;
+    }
+
+    .container-clinica h3 {
+        margin: 50px 0px 20px 0px;
+        color: rgb(85, 85, 85);
+        font-size: 23px;
+    }
+
+    
+    
+    .container-cards {
+        display: flex;
+        gap: 0px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card a img {
+        width: 100%;
+        
+    }
+    .card {
+        width: 250px;
+        height: 220px;
+        border: 2px solid rgb(204, 203, 203);
+        box-shadow: 2px 3px 20px 0 grey;
+        margin-top: 28px;
+    }
+    .card a {
+        text-decoration: none;
+        color: rgb(177, 177, 177);
+    }
+    .ultimo-card {
+        margin-bottom: 50px;
+    } 
+    .botao-ver-horario {
+        text-decoration: none;
+        background-color: rgb(48, 209, 238);
+        padding: 15px 24px;
+        border: 1px solid white;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .botao-ver-horario:hover {
+        font-size: 17px;
+        text-shadow: 1px 1px 3px black;
+    }
+   
+    .container-contato h3 {
+        font-size: 23px;
+        margin: 27px 0 18px 0;
+    }
+    .p1 {
+        margin: 0 0 10px 0;
+    }
+
+    .iframe {
+        margin: 50px 0 45px 0;
+    }
+    /*FINALIZADO*/
+    /* RODAPE */
+    footer {
+        background-color: rgb(103, 199, 223);
+    }
+    .rodape img {
+        width: 125px;
+    }
+    .rodape p {
+        font-size: 15px;
+    }
+}
+/*FINALIZADO TABLET*/
+
+/*DISPOSITIVO DESKTOP*/
+@media only screen and (min-width: 769px) {
+    
+    /*TOPO*/ 
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo a img {
+        width: 120px;
+        padding: 0;
+        margin-left: 5px;
+    }
+    
+    .link-topo a {
+        padding: 15px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px  black;
+    }
+    /*FINALIZADO*/
+
+    /*FUNDO*/
+    .container-img-fundo {
+        width: 100%;
+        height: 65vh;
+        background-image: url("assets/recepcao.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    h1 {
+        margin-left: 20px;
+        font-family: Arial;
+        color: #fff;
+        text-align: left;
+        font-size: 33px;
+        line-height: 45px;
+        text-shadow: 3px 9px 7px black;
+        
+    }
+    /*FINALIZADO*/
+
+    /*CONTEUDO PRINCIPAL*/
+    .limita-secao {
+        width: 920px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .container-sobre {
+        margin-top: 50px;
+    }
+    .logo-sobre {
+        display: flex;
+        justify-content: center;
+        margin: 65px 0px 15px 0px;
+   }
+   .logo-sobre img {
+    width: 250px;
+    height: 380px;
+   }
+    h2 {
+        font-size: 35px;
+        margin-bottom: 25px;
+        color: rgb(85, 85, 85);
+    }
+    p {
+        color: rgb(134, 134, 134);  /* PARA TODOS OS PARAGRAFOS*/
+        line-height: 32px;
+        font-size: 23px;
+    }
+    .container-lista-sobre h3 {
+        color: rgb(104, 103, 103);
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .lista {
+        margin: auto;   
+        width: 285px;
+        font-size: 23px;
+        color: rgb(102, 102, 102);
+        
+    }
+    .lista li {
+        text-align: left;
+        line-height: 32px;
+    }
+
+    .container-clinica h3 {
+        margin: 50px 0px 20px 0px;
+        color: rgb(85, 85, 85);
+        font-size: 23px;
+    }
+
+    
+    
+    .container-cards {
+        display: flex;
+        gap: 0px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card a img {
+        width: 100%;
+        
+    }
+    .card {
+        width: 250px;
+        height: 220px;
+        border: 2px solid rgb(204, 203, 203);
+        box-shadow: 2px 3px 20px 0 grey;
+        margin-top: 28px;
+    }
+    .card a {
+        text-decoration: none;
+        color: rgb(177, 177, 177);
+    }
+    .ultimo-card {
+        margin-bottom: 50px;
+    } 
+    .botao-ver-horario {
+        text-decoration: none;
+        background-color: rgb(48, 209, 238);
+        padding: 15px 24px;
+        border: 1px solid white;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .botao-ver-horario:hover {
+        font-size: 17px;
+        text-shadow: 1px 1px 3px black;
+    }
+   
+    .container-contato h3 {
+        font-size: 23px;
+        margin: 27px 0 18px 0;
+    }
+    .p1 {
+        margin: 0 0 10px 0;
+    }
+
+    .iframe {
+        margin: 50px 0 45px 0;
+    }
+    /*FINALIZADO*/
+    /* RODAPE */
+    footer {
+        background-color: rgb(103, 199, 223);
+    }
+    .rodape img {
+        width: 125px;
+    }
+    .rodape p {
+        font-size: 15px;
+    }
+}
+/*FINALIZADO DESKTOP*/
